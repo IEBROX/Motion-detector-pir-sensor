@@ -41,4 +41,5 @@ This project automatically controls room lighting using a PIR motion sensor and 
 - Adjustable motion sensitivity
 
 ## Author
-Your Name
+Het Patel
+
