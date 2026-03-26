@@ -1,79 +1,72 @@
-# Smart Power Saver for Room
+# Motion Detector Using PIR Sensor
 
-A smart energy-saving room automation project developed for **Applied Electronics (AE)**.  
-This system is designed to automatically control room appliances such as lights and fans based on room occupancy and environmental conditions, helping reduce unnecessary electricity consumption.
-
----
+Automatic Room Lighting and Load Control System using PIR Sensor, NE555 Timer IC, BC547 Transistor, and Relay.
 
 ## 📌 Project Overview
 
-In many rooms, lights and fans are often left ON even when no one is present, leading to unnecessary power wastage.  
-The **Smart Power Saver for Room** solves this problem by using sensors and a control unit to detect room conditions and automatically operate electrical loads only when required.
+This project is a hardware-based motion detection and automatic load control system designed using basic electronic components. It detects human motion using a PIR sensor and automatically switches ON a connected load such as a room light or fan. After a preset delay, the load switches OFF automatically when no further motion is detected.
 
-This project demonstrates a practical application of **automation**, **sensing**, and **power control** in a simple and cost-effective way.
-
----
-
-## 🎯 Objective
-
-The main objective of this project is to:
-
-- Reduce unnecessary power consumption in a room
-- Automate the operation of room appliances
-- Improve energy efficiency using sensors and electronics
-- Build a low-cost smart room control system
+This project was developed as part of the **Applied Electronics Assignment** for Semester IV.
 
 ---
 
-## 🚀 Features
+## 👨‍🎓 Submitted By
 
-- Automatic room light control
-- Occupancy/person detection
-- Smart power saving operation
-- Low-cost and beginner-friendly design
-- Suitable for homes, classrooms, offices, and hostels
-- Can be expanded for IoT-based automation in future
+- **Het Patel** (24BEI045)
+- **Namdar Mehdi** (24BEI041)
 
----
-
-## 🛠 Components Used
-
-| Component | Quantity | Description |
-|----------|----------|-------------|
-| Microcontroller / Control Unit | 1 | Used to process sensor inputs and control outputs |
-| PIR Sensor / IR Sensor | 1 | Detects human presence or motion |
-| LDR Sensor *(if used)* | 1 | Detects ambient light intensity |
-| Relay Module | 1 | Controls electrical load |
-| LED / Bulb | 1 | Represents room light |
-| Fan / DC Motor *(optional)* | 1 | Represents room fan |
-| Breadboard / PCB | 1 | Circuit assembly |
-| Connecting Wires | Multiple | Electrical connections |
-| Power Supply | 1 | Provides operating voltage |
+**Department:** Electronics & Instrumentation Engineering  
+**Subject:** Applied Electronics
 
 ---
 
-## ⚙ Working Principle
+## 🎯 Objectives
 
-The working of the system is based on automatic sensing and control:
-
-1. The sensor continuously monitors the room for human presence or motion.
-2. When a person enters the room, the sensor sends a signal to the control unit.
-3. The control unit processes the signal and turns **ON** the connected appliance (light/fan).
-4. When no person is detected for a certain time, the system turns the appliance **OFF** automatically.
-5. If an **LDR sensor** is used, the system can also decide whether the light should turn ON only when the room is dark.
-
-This helps in minimizing electricity wastage and improving energy efficiency.
-
----
-
-## 🧠 System Logic
-
-### Basic Logic
-
-- **Person detected** → Appliance ON
-- **No person detected** → Appliance OFF after delay
-- **Dark room (if LDR used)** → Light ON
-- **Bright room (if LDR used)** → Light OFF
+- Detect human motion using a PIR sensor
+- Automatically switch ON a connected load
+- Keep the load ON for a preset delay period
+- Switch OFF the load automatically after timeout
+- Demonstrate practical use of:
+  - PIR sensor
+  - NE555 Timer IC in monostable mode
+  - BC547 transistor as a switch
+  - Relay-based load control
 
 ---
 
+## 🧰 Components Used
+
+| Component | Quantity |
+|----------|----------|
+| PIR Sensor (HC-SR501) | 1 |
+| NE555 Timer IC | 1 |
+| BC547 Transistor | 1 |
+| 5V Relay | 1 |
+| 100K Potentiometer | 1 |
+| 470µF Capacitor | 1 |
+| 10K Resistor | 1 |
+| 1K Resistor | 1 |
+| LED | 1 |
+| Breadboard | 1 |
+| Jumper Wires | As required |
+| 5V Power Supply | 1 |
+
+---
+
+## ⚙️ Working Principle
+
+1. The PIR sensor detects motion and outputs a HIGH signal.
+2. The NE555 Timer IC, configured in monostable mode, generates a time-delayed output pulse.
+3. The output of the 555 timer drives the BC547 transistor.
+4. The transistor energizes the relay.
+5. The relay switches ON the connected load.
+6. After the preset time delay, the relay turns OFF automatically.
+
+---
+
+## ⏱️ Timing Formula
+
+The output ON time of the 555 timer in monostable mode is given by:
+
+```text
+T = 1.1 × R × C
