@@ -10,16 +10,6 @@ This project was developed as part of the **Applied Electronics Assignment** for
 
 ---
 
-## 👨‍🎓 Submitted By
-
-- **Het Patel** (24BEI045)
-- **Namdar Mehdi** (24BEI041)
-
-**Department:** Electronics & Instrumentation Engineering  
-**Subject:** Applied Electronics
-
----
-
 ## 🎯 Objectives
 
 - Detect human motion using a PIR sensor
