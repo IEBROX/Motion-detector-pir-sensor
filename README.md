@@ -76,5 +76,16 @@ This project was developed as part of the **Applied Electronics Assignment** for
 
 The output ON time of the 555 timer in monostable mode is given by:
 
+## 📷 Project Images
+
+### Circuit Diagram
+![Circuit Diagram](Images/Motion_sensor_using_PIR.png)
+
+### Breadboard Setup
+![Breadboard Setup](Images/motion_sensor_Bread_Board.jpeg)
+
+### GPB setup
+![Final Project](Images/motion_sensor_GPB.jpeg)
+
 ```text
 T = 1.1 × R × C
